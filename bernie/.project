@@ -6,17 +6,23 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>com.pandora.projects.ui.MKeyBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>com.aptana.ide.core.unifiedBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>com.pandora.projects.ui.MKeyNature</nature>
 		<nature>com.aptana.projects.webnature</nature>
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1541077125157</id>
+			<id>1541559214278</id>
 			<name></name>
 			<type>10</type>
 			<matcher>
