@@ -1,0 +1,14 @@
+/*===== reset =====*/
+html,body,div,p,h1,h2,h3,h4,h5,h6,blockquote,ol,ul,li,dl,dt,dd,form,fieldset,legend,button,input,textarea,pre,code,th,td{margin:0;padding:0;}
+html{font-size: 20px;}
+body{font-size: inherit;color:#000; font-family:"微软雅黑"; background:#fff;}
+button,input,select,textarea{font-size:20px;color:#666; font-family:"微软雅黑";outline:none;}
+textarea{ resize:none; }
+input,img,button{vertical-align:middle; border:0; font-family:"微软雅黑";} 
+h1,h2,h3,h4,h5,h6{ font-size:100%;font-weight:normal;}
+ul,ol,li{list-style:none;}
+a{text-decoration:none;color:#666;}
+a:hover{color:#f5a624;text-decoration:none;}
+.nowrap{white-space: nowrap;}
+
+/*==== header ====*/
