@@ -73,6 +73,9 @@
 	li{
 		list-style: none;
 	}
+	a{
+		text-decoration: none;
+	}
 	i,em{
 		font-style: normal;
 	}
@@ -110,15 +113,45 @@
 	.nav li i:before{
 		content: "";
 		position: absolute;
-		top: -2rem;
+		top: -2.2rem;
 		left: 3.4375rem;
-		width: 2.5rem;
-		height: 2.5rem;
+		width: 2.4rem;
+		height: 2.4rem;
+	}
+	.nav li .home-icon:before{
 		background: url(assets/img/home-page.png) no-repeat;
+		background-size: 100%;
+	}
+	.nav li .classify-icon:before{
+		background: url(assets/img/classify.png) no-repeat;
+		background-size: 100%;
+	}
+	.nav li .shopcart-icon:before{
+		background: url(assets/img/shop-cart.png) no-repeat;
+		background-size: 100%;
+	}
+	.nav li .user-icon:before{
+		background: url(assets/img/person-center.png) no-repeat;
 		background-size: 100%;
 	}
 	.nav .router-link-active i,.nav .router-link-active{
 		font-size: 1.2rem;
 		color: #db4c1f;
+	}
+	.nav .router-link-active .home-icon:before{
+		background: url(assets/img/home-page-on.png) no-repeat;
+		background-size: 100%;
+	}
+	.nav .router-link-active .classify-icon:before{
+		background: url(assets/img/classify-on.png) no-repeat;
+		background-size: 100%;
+	}
+	.nav .router-link-active .shopcart-icon:before{
+		background: url(assets/img/shop-cart-on.png) no-repeat;
+		background-size: 100%;
+	}
+	.nav .router-link-active .user-icon:before{
+		background: url(assets/img/person-center-on.png) no-repeat;
+		background-size: 100%;
 	}
 </style>

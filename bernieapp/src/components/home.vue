@@ -1,10 +1,21 @@
 <template>
-	<div>{{info[0].content}}</div>
+	<div>
+		<home-header></home-header>
+		<home-banner></home-banner>
+	</div>
 </template>
 
 <script>
+	
+	import HomeHeader from '@/components/homeHeader.vue'
+	import HomeBanner from '@/components/homeBanner.vue'
+	
 	export default {
 	  	name: 'Home',
+	  	components:{
+	  		"home-header":HomeHeader,
+	  		"home-banner":HomeBanner
+	  	},
 	  	data(){
 		  	return {
 		  		info:{}
