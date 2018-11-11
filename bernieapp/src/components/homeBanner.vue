@@ -2,7 +2,7 @@
 	<div class="banner">
 		<div class="container">
 			<ul id="imgList">
-				<li>
+				<li @>
 					<a href="javascript:;">
 						<img src="../assets/img/banner_01.jpg" alt="" />
 					</a>
@@ -15,11 +15,6 @@
 				<li>
 					<a href="javascript:;">
 						<img src="../assets/img/banner_03.jpg" alt="" />
-					</a>
-				</li>
-				<li>
-					<a href="javascript:;">
-						<img src="../assets/img/banner_01.jpg" alt="" />
 					</a>
 				</li>
 			</ul>

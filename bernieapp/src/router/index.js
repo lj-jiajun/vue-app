@@ -4,6 +4,7 @@ import Home from '@/components/home'
 import Classify from '@/components/classify'
 import ShopCart from '@/components/shopCart'
 import User from '@/components/user'
+import ProList from '@/components/proList'
 
 Vue.use(Router)
 
@@ -25,6 +26,13 @@ export default new Router({
       path: '/user',
       name: 'User',
       component: User
+    },{
+      path: '/prolist/:id',
+      name: 'ProList',
+      component: ProList
+    },{
+      path: '/*',
+      redirect: '/home'
     }
   ]
 })
