@@ -1,0 +1,25 @@
+@font-face {  
+  font-family: 'PingFang';  //重命名字体名
+  src: url('./PingFang-SC-Regular.otf');  //引入字体
+  src: url('./PingFang-SC-Regular.ttf');  //引入字体
+  font-weight: normal;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'AdobeKaitiStd';  //重命名字体名
+  src: url('./AdobeKaitiStd-Regular.otf');  //引入字体
+  font-weight: normal;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'DFPSongW12';  //重命名字体名
+  src: url('./DFPSongW12-Regular.ttf');  //引入字体
+  font-weight: normal;  
+  font-style: normal;  
+}
+@font-face {  
+  font-family: 'DFPWaWaW5';  //重命名字体名
+  src: url('./DFPWaWaW5-Regular.ttf');  //引入字体
+  font-weight: normal;  
+  font-style: normal;  
+}

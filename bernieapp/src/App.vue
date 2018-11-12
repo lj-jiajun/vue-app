@@ -56,7 +56,6 @@
 	  	}
 	  }
 	}
-
 </script>
 
 <style>
@@ -66,7 +65,9 @@
 	}
 	html,body{
 		width: 100%;
+		max-width: 800px;
 		height: 100%;
+		margin: 0 auto;
 		font-size: 20px;
 		overflow: hidden;
 	}
@@ -79,6 +80,9 @@
 	i,em{
 		font-style: normal;
 	}
+	h1,h2,h3,h4,h5,h6{
+		font-weight: 400;
+	}
 	#app{
 		width: 100%;
 	}
@@ -86,12 +90,16 @@
 		width: 100%;
 	}
 	.nav{
-		position: fixed;
+		position: absolute;
 		bottom:0;
-		left:0;
+		left: 50%;
 		width: 100%;
+		max-width: 800px;
+		transform: translateX(-50%);
 		height: 4.9rem;
+		background: #fff;
 		border-top: 1px solid #d2d2d2;
+		z-index: 10;
 	}
 	.nav li{
 		position: relative;
