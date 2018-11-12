@@ -1,4 +1,4 @@
-# bernieapp
+# bernieapp2
 
 > A Vue.js project
 

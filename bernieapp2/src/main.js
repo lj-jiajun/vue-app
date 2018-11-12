@@ -3,23 +3,16 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import store from './store'
-import vueAwesomeSwiper from 'vue-awesome-swiper'
-//import 'swiper/dist/css/swiper.css'
-import './styles/font.less'
-
 import { Datetime, Group } from 'vux'  
-Vue.component(Datetime.name, Datetime) 
-Vue.component(Group.name, Group)
+Vue.component(Datetime.name, Datetime);  
+Vue.component(Group.name, Group); 
 
-Vue.use(vueAwesomeSwiper)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  store,
   components: { App },
   template: '<App/>'
 })
