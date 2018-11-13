@@ -30,9 +30,9 @@ export default new Router({
       path: '/prolist/:id',
       name: 'ProList',
       component: ProList
-    },{
-      path: '/*',
-      redirect: '/home'
+//  },{
+//    path: '/',
+//    redirect: '/home'
     }
   ]
 })
