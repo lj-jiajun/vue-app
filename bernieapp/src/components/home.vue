@@ -8,12 +8,10 @@
 </template>
 
 <script>
-	
 	import HomeHeader from '@/components/homeHeader.vue'
 	import HomeBanner from '@/components/homeBanner.vue'
 	import HomeClassify from '@/components/homeClassify.vue'
 	import HomeNews from '@/components/homeNews.vue'
-	
 	export default {
 	  	name: 'Home',
 	  	components:{

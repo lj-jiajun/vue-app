@@ -26,7 +26,6 @@
 	  name: 'App',
 	  data(){
 	  	return {
-//	  		arr:[],
 	  		show:true
 	  	}
 	  },
@@ -36,7 +35,6 @@
 			}
 	  },
 	  created(){
-//	  	this.arr = this.$store.state.arr;
 	  	if(this.$route.path == '/'){
 	  		this.show = true;
 	  	}else{
