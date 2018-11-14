@@ -56,16 +56,14 @@
 	}
 </script>
 
-<style>
-	body,div,p,h1,h2,h3,h4,h5,h6,ul,li{
-		margin: 0;
-		padding: 0;
-	}
+<style lang="less">
+	@import '~vux/src/styles/reset.less';
 	html,body{
 		width: 100%;
 		max-width: 800px;
 		height: 100%;
 		margin: 0 auto;
+		font-family: 'PingFang';
 		font-size: 20px;
 		overflow: hidden;
 	}
@@ -81,14 +79,21 @@
 	h1,h2,h3,h4,h5,h6{
 		font-weight: 400;
 	}
+	input{
+		border: none;
+		outline: none;
+	}
 	#app{
 		width: 100%;
+		height: auto;
+		overflow: hidden;
+		padding-bottom: 4.9rem;
 	}
-	#app img{
+	/*#app img{
 		width: 100%;
-	}
+	}*/
 	.nav{
-		position: absolute;
+		position: fixed;
 		bottom:0;
 		left: 50%;
 		width: 100%;

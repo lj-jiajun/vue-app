@@ -36,7 +36,7 @@
   content: "";
   width: 1.5rem;
   height: 2rem;
-  background: url(../assets/img/location.png) no-repeat;
+  background: url(../../assets/img/location.png) no-repeat;
   background-size: 100% 100%;
 }
 .header .search {
@@ -44,7 +44,7 @@
   width: 23.5rem;
   height: 3rem;
   margin-top: 0.7rem;
-  background: url(../assets/img/pd-bg1.png) no-repeat;
+  background: url(../../assets/img/pd-bg1.png) no-repeat;
   background-size: 100%;
 }
 .header .search i {
@@ -60,7 +60,7 @@
   content: "";
   width: 2.05rem;
   height: 2.05rem;
-  background: url(../assets/img/search.png) no-repeat;
+  background: url(../../assets/img/search.png) no-repeat;
   background-size: 100%;
 }
 .header .search input {
@@ -84,7 +84,7 @@
   content: "";
   width: 2.05rem;
   height: 2rem;
-  background: url(../assets/img/sweep.png) no-repeat;
+  background: url(../../assets/img/sweep.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
 }
@@ -104,7 +104,7 @@
   content: "";
   width: 2.5rem;
   height: 2.5rem;
-  background: url(../assets/img/msg.png) no-repeat;
+  background: url(../../assets/img/msg.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
 }

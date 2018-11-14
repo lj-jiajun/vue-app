@@ -2,13 +2,13 @@
 	<div class="banner">
 		<swiper :options="swiperOption" ref="mySwiper">
 			<swiper-slide>
-				<img src="../assets/img/banner_01.jpg" alt=""/>
+				<img src="./../../assets/img/banner_01.jpg" alt=""/>
 			</swiper-slide>
 			<swiper-slide>
-				<img src="../assets/img/banner_02.jpg" alt=""/>
+				<img src="./../../assets/img/banner_02.jpg" alt=""/>
 			</swiper-slide>
 			<swiper-slide>
-				<img src="../assets/img/banner_03.jpg" alt=""/>
+				<img src="./../../assets/img/banner_03.jpg" alt=""/>
 			</swiper-slide>
 			 <div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
@@ -78,7 +78,13 @@
 		overflow: hidden;
 	}
 	.swiper-slide{
+		width: 100%;
 	  	height: 16rem;
+	}
+	.swiper-slide img{
+		width: 100%;
+		height: 100%;
+		vertical-align: top;
 	}
 	.swiper-pagination{
 		bottom: 2rem;

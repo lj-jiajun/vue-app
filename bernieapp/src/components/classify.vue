@@ -7,7 +7,7 @@
 <script>
 	
 //	import HomeHeader from '@/components/homeHeader.vue'
-	import HomeBanner from '@/components/homeBanner.vue'
+	import HomeBanner from '@/components/home/homeBanner.vue'
 	
 	export default {
 	  	name: 'Classify',

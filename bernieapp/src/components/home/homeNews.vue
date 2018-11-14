@@ -60,7 +60,7 @@
 		top: 0.675rem;
 		width: 0.65rem;
 		height: 0.65rem;
-		background: url(../assets/img/red-circle1.png) no-repeat;
+		background: url(../../assets/img/red-circle1.png) no-repeat;
 		background-size: 100%;
 	}
 </style>

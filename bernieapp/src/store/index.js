@@ -74,6 +74,9 @@ export default new Vuex.Store({
 			src:src8,
 			content:"这是情侣手表，欢迎你的到来呀！"
 		}],
+		skList:[{
+			title:""
+		}],
 		userinfo:{
 			name:"",
 			islogin:false
