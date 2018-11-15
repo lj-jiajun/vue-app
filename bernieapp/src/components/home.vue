@@ -108,9 +108,8 @@
 							</div>
 							<div class="gp-content">
 								<h3>正品手表女士表NH8353</h3>
-								<div class="gp-price">
-									<span>￥599.00</span>
-								</div>
+								<p class="gp-price"><span>￥599.00</span></p>
+								<em>8.8折</em>
 							</div>
 						</a>
 					</li>
@@ -121,9 +120,8 @@
 							</div>
 							<div class="gp-content">
 								<h3>正品手表女士表NH8353</h3>
-								<div class="gp-price">
-									<span>￥599.00</span>
-								</div>
+								<p class="gp-price"><span>￥599.00</span></p>
+								<em>8.8折</em>
 							</div>
 						</a>
 					</li>
@@ -134,9 +132,8 @@
 							</div>
 							<div class="gp-content">
 								<h3>正品手表女士表NH8353</h3>
-								<div class="gp-price">
-									<span>￥599.00</span>
-								</div>
+								<p class="gp-price"><span>￥599.00</span></p>
+								<em>8.8折</em>
 							</div>
 						</a>
 					</li>
@@ -147,9 +144,8 @@
 							</div>
 							<div class="gp-content">
 								<h3>正品手表女士表NH8353</h3>
-								<div class="gp-price">
-									<span>￥599.00</span>
-								</div>
+								<p class="gp-price"><span>￥599.00</span></p>
+								<em>8.8折</em>
 							</div>
 						</a>
 					</li>
@@ -160,9 +156,41 @@
 							</div>
 							<div class="gp-content">
 								<h3>正品手表女士表NH8353</h3>
-								<div class="gp-price">
-									<span>￥599.00</span>
-								</div>
+								<p class="gp-price"><span>￥599.00</span></p>
+								<em>8.8折</em>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="recommend">
+			<div class="rm-title">
+				<h2><span>为你推荐</span></h2>
+			</div>
+			<div class="rm-list">
+				<ul>
+					<li>
+						<a href="javascript:;">
+							<div class="rm-img">
+								<img src="../assets/img/watch-rm2.png" alt="" />
+							</div>
+							<div class="rm-content">
+								<h3>正品超薄时尚潮流手表</h3>
+								<p class="rm-txt"><i>准确</i><i>时尚</i><i>大气</i></p>
+								<p class="rm-price"><span>￥599.00</span></p>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:;">
+							<div class="rm-img">
+								<img src="../assets/img/watch-rm2.png" alt="" />
+							</div>
+							<div class="rm-content">
+								<h3>正品超薄时尚潮流手表</h3>
+								<p class="rm-txt"><i>准确</i><i>时尚</i><i>大气</i></p>
+								<p class="rm-price"><span>￥599.00</span></p>
 							</div>
 						</a>
 					</li>
