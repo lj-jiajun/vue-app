@@ -178,7 +178,7 @@
 							<div class="rm-content">
 								<h3>正品超薄时尚潮流手表</h3>
 								<p class="rm-txt"><i>准确</i><i>时尚</i><i>大气</i></p>
-								<p class="rm-price"><span>￥599.00</span></p>
+								<p class="rm-price">￥<span>599.00</span>元</p>
 							</div>
 						</a>
 					</li>
@@ -190,7 +190,7 @@
 							<div class="rm-content">
 								<h3>正品超薄时尚潮流手表</h3>
 								<p class="rm-txt"><i>准确</i><i>时尚</i><i>大气</i></p>
-								<p class="rm-price"><span>￥599.00</span></p>
+								<p class="rm-price">￥<span>599.00</span>元</p>
 							</div>
 						</a>
 					</li>

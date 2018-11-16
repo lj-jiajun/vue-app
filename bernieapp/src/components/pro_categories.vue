@@ -1,18 +1,16 @@
 <template>
 	<div>
-		<home-banner></home-banner>
+		<!--<home-banner></home-banner>-->
 	</div>
 </template>
 
 <script>
 	
-//	import HomeHeader from '@/components/homeHeader.vue'
 	import HomeBanner from '@/components/home/homeBanner.vue'
 	
 	export default {
 	  	name: 'Classify',
 	  	components:{
-//	  		"home-header":HomeHeader,
 	  		"home-banner":HomeBanner
 	  	},
 	  	data(){

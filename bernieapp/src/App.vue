@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   	<img src="@/assets/img/start.jpg" alt="" @click="enter" v-show="show"/>
-	  <ul class="nav" v-show="!show">
+	  <ul class="nav" v-show="!show" v-if="shownav">
 	  	<router-link to="/home" tag="li" key="1">
 	  		<i class="home-icon">首页</i>
 	  	</router-link>
@@ -26,7 +26,8 @@
 	  name: 'App',
 	  data(){
 	  	return {
-	  		show:true
+	  		show:true,
+	  		shownav:true
 	  	}
 	  },
 	  methods:{
@@ -37,6 +38,9 @@
 	  created(){
 	  	if(this.$route.path == '/'){
 	  		this.show = true;
+	  	}else if(this.$route.path == '/classify'){
+	  		this.show = false;
+	  		this.shownav = false;
 	  	}else{
 	  		this.show = false;
 	  	}

@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/home'
-import Classify from '@/components/classify'
-import ShopCart from '@/components/shopCart'
+import Home from '@/components/homepage'
+import Classify from '@/components/pro_categories'
+import ShopCart from '@/components/shop_cart'
 import User from '@/components/user'
-import ProList from '@/components/proList'
+import ProList from '@/components/pro_list'
 
 Vue.use(Router)
 
