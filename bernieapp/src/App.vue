@@ -62,6 +62,7 @@
 
 <style lang="less">
 	@import '~vux/src/styles/reset.less';
+	@import url("assets/fonts/iconfont/iconfont.css");
 	html,body{
 		width: 100%;
 		max-width: 800px;
@@ -93,9 +94,6 @@
 		overflow: hidden;
 		padding-bottom: 4.9rem;
 	}
-	/*#app img{
-		width: 100%;
-	}*/
 	.nav{
 		position: fixed;
 		bottom:0;

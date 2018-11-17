@@ -1,14 +1,22 @@
 <template>
 	<div class="proList">
+		<pub-header>
+			<i class="icon iconfont icon-fanhui" slot="left"></i>
+			<div class="search" slot="center"><i></i><input type="text" placeholder="商务男表 全场8折起"/><span></span></div>
+			<span slot="right">搜索</span>
+		</pub-header>
 		<img :src="info[0].src" alt="" />
 	</div>
 </template>
 
 <script>
 	import {mapState} from 'vuex';
-	
+	import PubHeader from '@/components/public/Header.vue'
 	export default {
 		name:"ProList",
+	  	components:{
+	  		"pub-header":PubHeader
+	  	},
 		data(){
 			return {
 				info:[]
