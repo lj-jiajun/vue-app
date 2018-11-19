@@ -20,30 +20,41 @@
 
 <style scoped>
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   height: 4.4rem;
   background: #f4ba19;
 }
 .header .header-left {
   float: left;
   width: 7rem;
+  height: 100%;
 }
-.header .header-left span {
-  position: relative;
+.header .header-left i {
   display: block;
   height: 4.4rem;
-  font-size: 1.8rem;
+  font-size: 2.6rem;
   line-height: 4.4rem;
-  padding-left: 2.9rem;
+  color: #fff;
+  text-align: center;
 }
-.header .header-left span:before {
-  position: absolute;
-  left: 1.1rem;
-  top: 1.2rem;
-  content: "";
-  width: 1.5rem;
-  height: 2rem;
-  background: url(../../assets/img/location.png) no-repeat;
-  background-size: 100% 100%;
+.header .header-left div{
+	width: 6rem;
+	height: 4.4rem;
+	margin: 0 auto;
+}
+.header .header-left div i{
+	float: left;
+	width: 2rem;
+  	font-size: 2rem;
+	color: #353535;
+}
+.header .header-left div span{
+	float: left;
+	width: 4rem;
+	font-size: 1.8rem;
+	line-height: 4.4rem;
 }
 .header .header-mid {
   float: left;
@@ -54,21 +65,14 @@
   background-size: 100%;
 }
 .header .header-mid i {
-  position: relative;
   float: left;
   width: 3.7rem;
   height: 3rem;
+  font-size: 2.1rem;
+  color: #999;
+  text-align: center;
 }
-.header .header-mid i:before {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.7rem;
-  content: "";
-  width: 2.05rem;
-  height: 2.05rem;
-  background: url(../../assets/img/search.png) no-repeat;
-  background-size: 100%;
-}
+
 .header .header-mid input {
   float: left;
   width: 16.5rem;
@@ -80,30 +84,33 @@
   border: none;
 }
 .header .header-mid span {
-  position: relative;
   float: left;
-}
-.header .header-mid span:before {
-  position: absolute;
-  top: 0.5rem;
-  left: 0.7rem;
-  content: "";
-  width: 2.05rem;
-  height: 2rem;
-  background: url(../../assets/img/sweep.png) no-repeat;
-  background-size: 100%;
-  cursor: pointer;
+  width: 3.3rem;
+  font-size: 2.1rem;
+  color: #999;
+  text-align: center;
 }
 .header .header-right {
   float: left;
   width: 6.95rem;
   height: 4.4rem;
 }
-.header .header-right span {
-  position: relative;
+.header .header-right i{
   display: block;
+  height: 100%;
+  font-size: 2.5rem;
+  line-height: 5rem;
+  color: #333;
+  text-align: center;
 }
-.header .header-right span:before {
+.header .header-right em {
+  display: block;
+  font-size: 1.8rem;
+  line-height: 4.4rem;
+  color: #fff;
+  text-align: center;
+}
+/*.header .header-right span:before {
   position: absolute;
   top: 1.2rem;
   left: 2.3rem;
@@ -113,5 +120,5 @@
   background: url(../../assets/img/msg.png) no-repeat;
   background-size: 100%;
   cursor: pointer;
-}
+}*/
 </style>

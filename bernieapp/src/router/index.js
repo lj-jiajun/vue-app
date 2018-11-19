@@ -27,7 +27,7 @@ export default new Router({
       name: 'User',
       component: User
     },{
-      path: '/prolist/:id',
+      path: '/home/prolist/:id',
       name: 'ProList',
       component: ProList
     }

@@ -35,42 +35,42 @@ export default new Vuex.Store({
 		}],
 		classifies:[{
 			title:"商务男表",
-			path:"/prolist/w1",
+			path:"/home/prolist/w1",
 			src:src1,
 			content:"这是商务男表，欢迎你的到来呀！"
 		},{
 			title:"精品女表",
-			path:"/prolist/w2",
+			path:"/home/prolist/w2",
 			src:src2,
 			content:"这是精品女表，欢迎你的到来呀！"
 		},{
 			title:"运动手表",
-			path:"/prolist/w3",
+			path:"/home/prolist/w3",
 			src:src3,
 			content:"这是运动手表，欢迎你的到来呀！"
 		},{
 			title:"石英手表",
-			path:"/prolist/w4",
+			path:"/home/prolist/w4",
 			src:src4,
 			content:"这是石英手表，欢迎你的到来呀！"
 		},{
 			title:"学生男表",
-			path:"/prolist/w5",
+			path:"/home/prolist/w5",
 			src:src5,
 			content:"这是学生男表，欢迎你的到来呀！"
 		},{
 			title:"智能女表",
-			path:"/prolist/w6",
+			path:"/home/prolist/w6",
 			src:src6,
 			content:"这是分类，欢迎你的到来呀！"
 		},{
 			title:"运动手表",
-			path:"/prolist/w7",
+			path:"/home/prolist/w7",
 			src:src7,
 			content:"这是运动手表，欢迎你的到来呀！"
 		},{
 			title:"情侣手表",
-			path:"/prolist/w8",
+			path:"/home/prolist/w8",
 			src:src8,
 			content:"这是情侣手表，欢迎你的到来呀！"
 		}],

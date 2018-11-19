@@ -1,0 +1,63 @@
+.proList{
+    width: 100%;
+    height: auto;
+    padding-top: 4.4rem;
+    overflow: hidden;
+    .pl-content{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        .pl-tab{
+            width:100%;
+            height: auto;
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+            li{
+                float: left;
+                width: 25%;
+                height: 4.8rem;
+                line-height: 4.8rem;
+                text-align: center;
+                span{
+                    font-size: 1.6rem;
+                    color: #999;
+                }
+                em{
+                    float: left;
+                    font-size: 1.6rem;
+                    color: #999;
+                    margin-left: 2.1825rem;
+                }
+                i{
+                    float: left;
+                    font-size: 1.8rem;
+                    color: #999;
+                }
+            }
+            li.active{
+                span{
+                    position: relative;
+                    color: #333;
+                }
+                span:after{
+                    content: "";
+                    position: absolute;
+                    top: 0.9rem;
+                    right: -1rem;
+                    width: 0.75rem;
+                    height: 0.35rem;
+                    background: url(../img/icon-on.png) no-repeat;
+                    background-size: 100%;
+                }
+            }
+            li.on{
+                em{
+                    color: #333;
+                }
+                i{
+                    color: #333;
+                }
+            }
+        }
+    }
+}

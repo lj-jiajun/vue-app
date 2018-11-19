@@ -1,17 +1,19 @@
 <template>
 	<div>
-		<!--<home-banner></home-banner>-->
+		<pub-banner>
+			
+		</pub-banner>
 	</div>
 </template>
 
 <script>
 	
-	import HomeBanner from '@/components/home/homeBanner.vue'
+	import PubHeader from '@/components/public/header.vue'
 	
 	export default {
 	  	name: 'Classify',
 	  	components:{
-	  		"home-banner":HomeBanner
+	  		"pub-banner":PubHeader
 	  	},
 	  	data(){
 		  	return {
