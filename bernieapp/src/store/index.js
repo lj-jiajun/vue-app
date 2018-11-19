@@ -12,6 +12,20 @@ import src6 from '@/assets/img/watch-icon6.png'
 import src7 from '@/assets/img/watch-icon7.png'
 import src8 from '@/assets/img/watch-icon8.png'
 
+import img1 from '@/assets/img/watch-pc1.png'
+import img2 from '@/assets/img/watch-pc2.png'
+import img3 from '@/assets/img/watch-pc3.png'
+import img4 from '@/assets/img/watch-pc4.png'
+import img5 from '@/assets/img/watch-pc5.png'
+import img6 from '@/assets/img/watch-pc6.png'
+import img7 from '@/assets/img/watch-pc7.png'
+import img8 from '@/assets/img/watch-pc8.png'
+import img9 from '@/assets/img/watch-pc9.png'
+import img10 from '@/assets/img/watch-pc10.png'
+import img11 from '@/assets/img/watch-pc11.png'
+import img12 from '@/assets/img/watch-pc12.png'
+import img13 from '@/assets/img/watch-pc13.png'
+
 
 
 export default new Vuex.Store({
@@ -74,8 +88,20 @@ export default new Vuex.Store({
 			src:src8,
 			content:"这是情侣手表，欢迎你的到来呀！"
 		}],
-		skList:[{
-			title:""
+		proList:[{
+			pro_id:"pl_1",
+			title:"正品手表手表",
+			price:1099,
+			discount:"满499减50",
+			sales:213,
+			imgSrc:img1
+		},{
+			pro_id:"pl_2",
+			title:"正品男士手表皮带手表",
+			price:1099,
+			discount:"满499减50",
+			sales:213,
+			imgSrc:img2
 		}],
 		userinfo:{
 			name:"",
@@ -96,7 +122,20 @@ export default new Vuex.Store({
 			src5,
 			src6,
 			src7,
-			src8
+			src8,
+			img1,
+			img2,
+			img3,
+			img4,
+			img5,
+			img6,
+			img7,
+			img8,
+			img9,
+			img10,
+			img11,
+			img12,
+			img13,
 		}
 	}
 })
