@@ -32,7 +32,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="javascript:;">
+					<a href="javascript:;" @click="showScreenings">
 						<em>筛选</em>
 						<i class="icon iconfont icon-shaixuan"></i>
 					</a>
@@ -55,7 +55,7 @@
 				</router-link>
 			</ul>
 		</div>
-		<div class="pl-screening">
+		<div class="pl-screening" v-if="show">
 				<ul class="screen-list">
 					<li>
 						<h4>价格</h4>
@@ -91,26 +91,37 @@
 	  	},
 		data(){
 			return {
-				list:[]
+				list:[],
+				show:false
 			}
 		},
 		created(){
-		  	this.list = this.screenings;
-		  	
+			var newarr = [];
+		  	this.screenings.map(item=>{
+		  		newarr.push(item);
+		  	});
+		  	this.list = newarr;
 		},
 		methods:{
 			goback(ev){
 				this.$router.go(-1);
+			},
+			showScreenings(){
+				this.show = true;
 			},
 			check(ev){
 				var check = this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked;
 				this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked = !check;
 			},
 			reset(){
-				this.list = this.screenings;
+				var newarr = [];
+			  	this.screenings.map(item=>{
+			  		newarr.push(item);
+			  	});
+			  	this.list = newarr;
 			},
 			finish(){
-				
+				this.show = false;
 			}
 		},
 		computed:{
