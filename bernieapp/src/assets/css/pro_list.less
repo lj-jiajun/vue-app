@@ -59,5 +59,172 @@
                 }
             }
         }
+        .pl-list{
+            width: 100%;
+            height: 57.5rem;
+            overflow-x: hidden;
+            li{
+                float: left;
+                width: 50%;
+                height:27.9rem;
+                border: 0.2rem solid #f8f8f8;
+                box-sizing: border-box;
+                .pl-img{
+                    width: 10rem;
+                    height: 16rem;
+                    margin: 2.5rem auto 1.5rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        vertical-align: top;
+                    }
+                }
+                .pl-content{
+                    width: 16rem;
+                    height: 7.5rem;
+                    margin: 0 auto;
+                    h3{
+                        font-size: 1.6rem;
+                        line-height: 2.8rem;
+                        color: #333;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    p{
+                        width: 100%;
+                        height: 2rem;
+                        em{
+                            float: left;
+                            width: 7.3rem;
+                            height: 100%;
+                            font-size: 1.2rem;
+                            line-height: 2rem;
+                            color: #fff;
+                            text-align: center;
+                            background: #d42d29;
+                            border-radius: 0.6rem;
+                        }
+                    }
+                    div{
+                        width: 100%;
+                        height: 2.5rem;
+                        margin-top: 0.2rem;
+                        font-size: 1.6rem;
+                        line-height: 2.5rem;
+                        span{
+                            float: left;
+                            color: #d42d29;
+                        }
+                        b{
+                            float: left;
+                            margin-left: 0.5rem;
+                            font-size: 1.2rem;
+                            font-weight: 400;
+                            color: #999;
+                        }
+                        i{
+                            float: right;
+                            width: 1.9rem;
+                            height: 100%;
+                            font-size: 1.9rem;
+                            color: #d42d29;
+                            text-align: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .pl-screening{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.25);
+        .screen-list{
+            float: right;
+            width: 27.5rem;
+            height: 100%;
+            background: #fff;
+            li{
+                height: auto;
+                padding: 0.4rem 0 0.6rem 1.1rem;
+                font-size: 1.5rem;
+                color: #999;
+                border: 1px solid #ccc;
+                overflow: hidden;
+                h4{
+                    line-height: 2.1rem;
+                }
+                p{
+                    padding-left: 0.5rem;
+                    line-height: 3rem;
+                    span{
+                        float: left;
+                    }
+                    input{
+                        float: left;
+                        width: 5rem;
+                        height: 3rem;
+                        margin: 0 0.6rem;
+                        padding: 0 0.5rem;
+                        font-size: 1.3rem;
+                        color: #ccc;
+                        text-align: center;
+                        background: #f8f8f8;
+                        border-radius: 0.5rem;
+                    }
+                    em{
+                        float: left;
+                    }
+                }
+                div{
+                    height: auto;
+                    overflow: hidden;
+                    em{
+                        float: left;
+                        min-width: 4.5rem;
+                        height: 3rem;
+                        margin: 1rem 1.5rem 0.5rem 0;
+                        padding: 0 0.75rem;
+                        line-height: 3rem;
+                        color: #666;
+                        text-align: center;
+                        background: #f8f8f8;
+                        border-radius: 0.6rem;
+                    }
+                    em.active{
+                        color: #fff;
+                        background: #ccc;
+                    }
+                }
+            }
+        }
+        .screen-btns{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 27.5rem;
+            height: 3.6rem;
+            border-bottom: 2px solid #bab5b1;
+            input{
+                float: left;
+                width: 50%;
+                height: 100%;
+                font-size: 1.8rem;
+                line-height: 3.6rem;
+                text-align: center;
+            }
+            .screen-reset{
+                color: #d42d29;
+                background: #8bcdbc;
+            }
+            .screen-finish{
+                color: #fff;
+                background: #d42d29;
+            }
+        }
     }
 }

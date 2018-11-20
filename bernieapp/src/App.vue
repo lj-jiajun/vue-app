@@ -1,7 +1,7 @@
 <template>
   <div id="app">
   	<img src="@/assets/img/start.jpg" alt="" @click="enter" v-show="show"/>
-	  <ul class="nav" v-show="!show" v-if="shownav">
+	  <ul class="nav" v-if="shownav">
 	  	<router-link to="/home" tag="li" key="1">
 	  		<i class="home-icon">首页</i>
 	  	</router-link>
@@ -41,18 +41,29 @@
 	  	}else if(this.$route.path == '/classify'){
 	  		this.show = false;
 	  		this.shownav = false;
+	  	}else if(this.$route.path.indexOf('/prolist')!=-1){
+	  		this.show = false;
+	  		this.shownav = false;
 	  	}else{
 	  		this.show = false;
+			  		this.shownav = true;
 	  	}
 	  },
 	  watch:{
 	  	$route:{
 	  		handler:function(){
 	  			if(this.$route.path == '/'){
-	  					this.show = true;
-		  		}else{
-		  			this.show = false;
-		  		}
+			  		this.show = true;
+			  	}else if(this.$route.path == '/classify'){
+			  		this.show = false;
+			  		this.shownav = false;
+			  	}else if(this.$route.path.indexOf('/prolist')!=-1){
+			  		this.show = false;
+			  		this.shownav = false;
+			  	}else{
+			  		this.show = false;
+			  		this.shownav = true;
+			  	}
 	  		},
 	  		deep:true
 	  	}

@@ -38,7 +38,46 @@
 					</a>
 				</li>
 			</ul>
+			<ul class="pl-list">
+				<router-link v-for="(item,index) in products" :to="'/prodetails/'+item.pro_id" :key="index" tag="li">
+					<div class="pl-img">
+						<img :src="item.imgSrc" alt="" />
+					</div>
+					<div class="pl-content">
+						<h3>{{item.title}}</h3>
+						<p><em>{{item.discount}}</em></p>
+						<div>
+							<span>￥{{item.price}}</span>
+							<b>月销{{item.sales}}笔</b>
+							<i class="icon iconfont icon-gouwuchekong"></i>
+						</div>
+					</div>
+				</router-link>
+			</ul>
 		</div>
+		<div class="pl-screening">
+				<ul class="screen-list">
+					<li>
+						<h4>价格</h4>
+						<p>
+							<span>价格区间(元)</span>
+							<input type="text" class="lowest-price" placeholder="最低价"/>
+							<em>-</em>
+							<input type="text" class="highest-price" placeholder="最高价"/>
+						</p>
+					</li>
+					<li v-for="(item1,index1) in list">
+						<h4>{{item1.title}}</h4>
+						<div>
+							<em v-for="(item,index) in item1.content" :data-type="index1" :data-index="index" :class="item.checked?'active':''" @click="check">{{item.name}}</em>
+						</div>
+					</li>
+				</ul>
+				<div class="screen-btns">
+					<input type="button" class="screen-reset" @click="reset" value="重置"/>
+					<input type="button" class="screen-finish" @click="finish" value="完成"/>
+				</div>
+			</div>
 	</div>
 </template>
 
@@ -52,26 +91,30 @@
 	  	},
 		data(){
 			return {
-				info:[]
+				list:[]
 			}
 		},
 		created(){
-		  	this.info = this.classifies.filter((item,index)=>{
-		  		return item.path==this.$route.path
-		  	});
-		  	if(this.info.length==0){
-		  		this.info.push(this.classifies[0]);
-		  	}
-//		  	console.log(this.info[0].content);
+		  	this.list = this.screenings;
+		  	
 		},
 		methods:{
 			goback(ev){
 				this.$router.go(-1);
-//				console.log(this.$router)
+			},
+			check(ev){
+				var check = this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked;
+				this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked = !check;
+			},
+			reset(){
+				this.list = this.screenings;
+			},
+			finish(){
+				
 			}
 		},
 		computed:{
-		  	...mapState(['classifies'])
+		  	...mapState(['classifies','products','screenings'])
 		}
 	}
 </script>
