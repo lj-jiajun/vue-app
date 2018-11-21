@@ -10,7 +10,7 @@
 			<swiper-slide>
 				<img src="./../../assets/img/banner_03.jpg" alt=""/>
 			</swiper-slide>
-			 <div class="swiper-pagination" slot="pagination"></div>
+			<div class="swiper-pagination" slot="pagination"></div>
 		</swiper>
 	</div>
 </template>

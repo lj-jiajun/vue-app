@@ -69,7 +69,7 @@
 					<li v-for="(item1,index1) in list">
 						<h4>{{item1.title}}</h4>
 						<div>
-							<em v-for="(item,index) in item1.content" :data-type="index1" :data-index="index" :class="item.checked?'active':''" @click="check">{{item.name}}</em>
+							<em v-for="(item,index) in item1.content" :class="item.checked?'active':''" @click="check(item)">{{item.name}}</em>
 						</div>
 					</li>
 				</ul>
@@ -96,11 +96,7 @@
 			}
 		},
 		created(){
-			var newarr = [];
-		  	this.screenings.map(item=>{
-		  		newarr.push(item);
-		  	});
-		  	this.list = newarr;
+			this.list = this.screenings;
 		},
 		methods:{
 			goback(ev){
@@ -109,16 +105,15 @@
 			showScreenings(){
 				this.show = true;
 			},
-			check(ev){
-				var check = this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked;
-				this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked = !check;
+			check(item){
+				item.checked = !item.checked;
 			},
 			reset(){
-				var newarr = [];
-			  	this.screenings.map(item=>{
-			  		newarr.push(item);
-			  	});
-			  	this.list = newarr;
+				this.list.map((item,index)=>{
+					item.content.map((item1,index1)=>{
+						item1.checked = false;
+					});
+				});
 			},
 			finish(){
 				this.show = false;
