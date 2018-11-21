@@ -47,9 +47,9 @@
 					<h3>领取优惠券</h3>
 					<i class="icon iconfont icon-right"></i>
 					<p>
-						<i class="icon iconfont icon-right">正品保证</i>
+						<i class="icon iconfont icon-zhengpin">正品保证</i>
 						<i class="icon iconfont icon-7">七天包换</i>
-						<i class="icon iconfont icon-right">商家包邮</i>
+						<i class="icon iconfont icon-baoyou-copy">商家包邮</i>
 					</p>
 				</div>
 				<div class="pd-type">
