@@ -32,7 +32,7 @@
 					</a>
 				</li>
 				<li>
-					<a href="javascript:;">
+					<a href="javascript:;" @click="showScreenings">
 						<em>筛选</em>
 						<i class="icon iconfont icon-shaixuan"></i>
 					</a>
@@ -55,7 +55,7 @@
 				</router-link>
 			</ul>
 		</div>
-		<div class="pl-screening">
+		<div class="pl-screening" v-if="show">
 				<ul class="screen-list">
 					<li>
 						<h4>价格</h4>
@@ -69,7 +69,7 @@
 					<li v-for="(item1,index1) in list">
 						<h4>{{item1.title}}</h4>
 						<div>
-							<em v-for="(item,index) in item1.content" :data-type="index1" :data-index="index" :class="item.checked?'active':''" @click="check">{{item.name}}</em>
+							<em v-for="(item,index) in item1.content" :class="item.checked?'active':''" @click="check(item)">{{item.name}}</em>
 						</div>
 					</li>
 				</ul>
@@ -91,26 +91,41 @@
 	  	},
 		data(){
 			return {
-				list:[]
+				list:[],
+				show:false
 			}
 		},
 		created(){
-		  	this.list = this.screenings;
-		  	
+//		  	var newArr = [];
+//			newArr = this.screenings.filter((item,index)=>{
+//				this.list.push(item);
+//				return true;
+//			});
+//			this.list = this.screenings;
+
+			this.list = this.screenings;
 		},
 		methods:{
 			goback(ev){
 				this.$router.go(-1);
 			},
-			check(ev){
-				var check = this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked;
-				this.list[ev.target.dataset.type].content[ev.target.dataset.index].checked = !check;
+			showScreenings(){
+				this.show = true;
+			},
+			check(item){
+				item.checked = !item.checked;
 			},
 			reset(){
-				this.list = this.screenings;
+				this.list.map((item,index)=>{
+					item.content.map((item1,index1)=>{
+						item1.checked = false;
+					});
+				});
+//				console.log(this.list)
+//				console.log(this.$store.state.screenings)
 			},
 			finish(){
-				
+				this.show = false;
 			}
 		},
 		computed:{

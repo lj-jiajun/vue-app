@@ -57,12 +57,31 @@
 	line-height: 4.4rem;
 }
 .header .header-mid {
-  float: left;
-  width: 23.5rem;
-  height: 3rem;
-  margin-top: 0.7rem;
-  background: url(../../assets/img/pd-bg1.png) no-repeat;
-  background-size: 100%;
+  	float: left;
+  	width: 23.5rem;
+  	height: 4.4rem;
+}
+.header .header-mid ul{
+	width: 100%;
+  	height: 100%;
+}
+.header .header-mid ul li{
+	float: left;
+	width: 33.33%;
+	font-size: 1.8rem;
+	line-height: 4.4rem;
+  	color: #fff;
+  	text-align: center;
+}
+.header .header-mid ul li.active{
+	color: #e91b1b;
+}
+.header .header-mid div{
+	width: 23.5rem;
+  	height: 3rem;
+  	margin-top: 0.7rem;
+  	background: url(../../assets/img/pd-bg1.png) no-repeat;
+  	background-size: 100%;
 }
 .header .header-mid i {
   float: left;
@@ -102,6 +121,14 @@
   line-height: 5rem;
   color: #333;
   text-align: center;
+}
+.header .header-right span{
+	display: block;
+  	height: 100%;
+  	font-size: 2.5rem;
+  	line-height: 5rem;
+  	color: #fff;
+  	text-align: center;
 }
 .header .header-right em {
   display: block;

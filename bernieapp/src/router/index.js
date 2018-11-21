@@ -5,6 +5,7 @@ import Classify from '@/components/pro_categories'
 import ShopCart from '@/components/shop_cart'
 import User from '@/components/user'
 import ProList from '@/components/pro_list'
+import ProDetails from '@/components/pro_details'
 
 Vue.use(Router)
 
@@ -30,6 +31,10 @@ export default new Router({
       path: '/prolist/:id',
       name: 'ProList',
       component: ProList
+    },{
+      path: '/prodetails/:id',
+      name: 'ProDetails',
+      component: ProDetails
     }
   ]
 })
