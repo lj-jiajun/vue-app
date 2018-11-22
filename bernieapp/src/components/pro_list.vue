@@ -96,6 +96,13 @@
 			}
 		},
 		created(){
+//		  	var newArr = [];
+//			newArr = this.screenings.filter((item,index)=>{
+//				this.list.push(item);
+//				return true;
+//			});
+//			this.list = this.screenings;
+
 			this.list = this.screenings;
 		},
 		methods:{
@@ -114,6 +121,8 @@
 						item1.checked = false;
 					});
 				});
+//				console.log(this.list)
+//				console.log(this.$store.state.screenings)
 			},
 			finish(){
 				this.show = false;

@@ -25,6 +25,7 @@
   left: 0;
   height: 4.4rem;
   background: #f4ba19;
+  z-index: 10;
 }
 .header .header-left {
   float: left;

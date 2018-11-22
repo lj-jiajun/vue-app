@@ -6,6 +6,7 @@ import ShopCart from '@/components/shop_cart'
 import User from '@/components/user'
 import ProList from '@/components/pro_list'
 import ProDetails from '@/components/pro_details'
+import ProSearch from '@/components/pro_search'
 
 Vue.use(Router)
 
@@ -35,6 +36,10 @@ export default new Router({
       path: '/prodetails/:id',
       name: 'ProDetails',
       component: ProDetails
+    },{
+      path: '/pro-search/:id',
+      name: 'ProSearch',
+      component: ProSearch
     }
   ]
 })
