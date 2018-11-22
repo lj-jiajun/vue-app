@@ -3,7 +3,7 @@
 		<pub-header>
 			<i slot="left" class="icon iconfont icon-fanhui" @click="goback"></i>
 			<div slot="mid">
-				<i class="icon iconfont icon-oc-search" @click="search"></i>
+				<i class="icon iconfont icon-oc-search"></i>
 				<input type="text" placeholder="商务男表 全场8折起"/>
 				<span class="icon iconfont icon-shandiao"></span>
 			</div>
@@ -16,14 +16,16 @@
 					<i class="icon iconfont icon-shanchu"></i>
 				</div>
 				<div class="re-list">
+					<span v-for="(item,index) in recents" @click="checkRecents(index)">{{item}}</span>
 				</div>
 			</div>
 			<div class="ps-want">
 				<div class="psw-title">
 					<h2>猜你想要</h2>
-					<em><i class="icon iconfont icon-shanchu"></i>换一批</em>
+					<em><i class="icon iconfont icon-huan"></i>换一批</em>
 				</div>
 				<div class="psw-list">
+					<span v-for="(item,index) in wants" @click="checkWants(index)">{{item}}</span>
 				</div>
 			</div>
 		</div>
@@ -41,25 +43,31 @@
 	  	},
 		data(){
 			return {
-				info:{}
+				recents:[],
+				wants:[]
 			}
 		},
 		created(){
-		  	var obj = this.products.filter((item,index)=>{
-				return item.pro_id == this.$route.params.id;
+			this.recents = this.recentSearches.filter((item,index)=>{
+				return index<8
 			});
-			this.info = obj[0];
+			this.wants = this.wantSearches.filter((item,index)=>{
+				return index<7
+			});
 		},
 		methods:{
 			goback(ev){
 				this.$router.go(-1);
 			},
-			search(){
-				this.$router.push("/prosearch");
+			checkRecents(index){
+				
+			},
+			checkWants(index){
+				
 			}
 		},
 		computed:{
-		  	...mapState(['products'])
+		  	...mapState(['recentSearches','wantSearches'])
 		}
 	}
 </script>

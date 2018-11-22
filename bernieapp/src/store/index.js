@@ -275,6 +275,30 @@ export default new Vuex.Store({
 				name:"其他"
 			}]
 		}],
+		recentSearches:[
+				"时尚男表",
+				"唯美女表",
+				"自动机械表",
+				"电子表",
+				"运动表",
+				"石英表",
+				"精工",
+				"天梭"
+		],
+		wantSearches:[
+				"时尚女表",
+				"新品上市",
+				"热卖产品",
+				"限时抢购",
+				"限量出售",
+				"5折清仓",
+				"团购优惠",
+				"时尚男表",
+				"唯美女表",
+				"春季新款",
+				"超值特卖",
+				"魅力四射"
+		],
 		userinfo:{
 			name:"",
 			islogin:false
@@ -283,6 +307,9 @@ export default new Vuex.Store({
 	mutations:{  // 唯一改变状态管理里面的数据,放的全部是是函数，
 		changedArr(state,obj){
 			state.arr = obj;
+		},
+		changeRecentSearches(state,obj){
+			state.recentSearches = obj;
 		}
 	},
 	data(){
