@@ -37,7 +37,7 @@ export default new Router({
       name: 'ProDetails',
       component: ProDetails
     },{
-      path: '/pro-search/:id',
+      path: '/prosearch',
       name: 'ProSearch',
       component: ProSearch
     }

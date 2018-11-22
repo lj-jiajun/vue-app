@@ -7,7 +7,7 @@
 				<span>广州</span>
 			</div>-->
 			<div slot="mid" class="search">
-				<i class="icon iconfont icon-oc-search"></i>
+				<i class="icon iconfont icon-oc-search" @click="search"></i>
 				<input type="text" placeholder="商务男表 全场8折起"/>
 				<!--<span class="icon iconfont icon-552dc065f0478"></span>-->
 			</div>
@@ -108,6 +108,9 @@
 		methods:{
 			goback(ev){
 				this.$router.go(-1);
+			},
+			search(){
+				this.$router.push("/prosearch");
 			},
 			showScreenings(){
 				this.show = true;
