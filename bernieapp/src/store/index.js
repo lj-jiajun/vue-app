@@ -94,6 +94,9 @@ export default new Vuex.Store({
 			price:599,
 			oldprice:999,
 			discount:"满399减50",
+			discountNum:2,
+			discountRate:8,
+			freePost:399,
 			sales:213,
 			imgSrc:img1
 		},{
@@ -102,6 +105,9 @@ export default new Vuex.Store({
 			price:399,
 			oldprice:699,
 			discount:"满299减50",
+			discountNum:2,
+			discountRate:8,
+			freePost:299,
 			sales:153,
 			imgSrc:img2
 		},{
@@ -110,6 +116,9 @@ export default new Vuex.Store({
 			price:499,
 			oldprice:799,
 			discount:"满399减50",
+			discountNum:2,
+			discountRate:9,
+			freePost:299,
 			sales:200,
 			imgSrc:img3
 		},{
@@ -118,6 +127,9 @@ export default new Vuex.Store({
 			price:1199,
 			oldprice:1599,
 			discount:"满599减50",
+			freePost:599,
+			discountNum:2,
+			discountRate:7,
 			sales:255,
 			imgSrc:img4
 		},{
@@ -126,14 +138,20 @@ export default new Vuex.Store({
 			price:899,
 			oldprice:1199,
 			discount:"满699减50",
+			freePost:699,
+			discountNum:2,
+			discountRate:8,
 			sales:113,
 			imgSrc:img5
 		},{
 			pro_id:"pl_6",
 			title:"时尚女士手表机械手表",
 			price:1099,
-			oldprice:1699,
+			oldprice:1399,
 			discount:"满999减150",
+			freePost:499,
+			discountNum:2,
+			discountRate:9,
 			sales:168,
 			imgSrc:img6
 		},{
@@ -141,7 +159,10 @@ export default new Vuex.Store({
 			title:"正品光能手表男士手表防水手表",
 			price:899,
 			oldprice:1199,
-			discount:"满499减50",
+			discount:"满699减100",
+			freePost:699,
+			discountNum:2,
+			discountRate:7,
 			sales:208,
 			imgSrc:img7
 		},{
@@ -150,6 +171,9 @@ export default new Vuex.Store({
 			price:999,
 			oldprice:1399,
 			discount:"满499减50",
+			freePost:599,
+			discountNum:2,
+			discountRate:9,
 			sales:242,
 			imgSrc:img8
 		},{
@@ -158,6 +182,9 @@ export default new Vuex.Store({
 			price:799,
 			oldprice:1199,
 			discount:"满499减50",
+			freePost:499,
+			discountNum:2,
+			discountRate:9,
 			sales:133,
 			imgSrc:img9
 		},{
@@ -166,6 +193,9 @@ export default new Vuex.Store({
 			price:499,
 			oldprice:999,
 			discount:"满399减50",
+			freePost:399,
+			discountNum:2,
+			discountRate:8,
 			sales:152,
 			imgSrc:img10
 		},{
@@ -174,6 +204,9 @@ export default new Vuex.Store({
 			price:699,
 			oldprice:999,
 			discount:"满499减50",
+			freePost:499,
+			discountNum:2,
+			discountRate:7,
 			sales:167,
 			imgSrc:img11
 		},{
@@ -182,6 +215,9 @@ export default new Vuex.Store({
 			price:899,
 			oldprice:1399,
 			discount:"满599减100",
+			freePost:599,
+			discountNum:2,
+			discountRate:9,
 			sales:186,
 			imgSrc:img12
 		},{
@@ -190,6 +226,9 @@ export default new Vuex.Store({
 			price:1099,
 			oldprice:1499,
 			discount:"满699减100",
+			freePost:699,
+			discountNum:2,
+			discountRate:8,
 			sales:158,
 			imgSrc:img13
 		}],
@@ -214,7 +253,7 @@ export default new Vuex.Store({
 				checked:false,
 				name:"机械表"
 			}]
-		},{
+			},{
 			title:"机芯类型",
 			content:[{
 				checked:false,
@@ -299,10 +338,35 @@ export default new Vuex.Store({
 				"超值特卖",
 				"魅力四射"
 		],
+		shopCarts:[{
+				shop_id:1,
+				user_id:"ui_1",
+				pro_id:"pl_1",
+				shop_num:1,
+				shop_money:499
+		},{
+				shop_id:2,
+				user_id:"ui_1",
+				pro_id:"pl_9",
+				shop_num:1,
+				shop_money:499
+		},{
+				shop_id:3,
+				user_id:"ui_1",
+				pro_id:"pl_12",
+				shop_num:1,
+				shop_money:499
+		}],
 		userinfo:{
-			name:"",
+			userid:"ui_1",
+			name:"admin",
 			islogin:false
-		}
+		},
+		users:[{
+			userid:"ui_1",
+			name:"admin",
+			pass:"123456"
+		}]
   },
 	mutations:{  // 唯一改变状态管理里面的数据,放的全部是是函数，
 		changedArr(state,obj){

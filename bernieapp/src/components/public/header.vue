@@ -62,6 +62,13 @@
   	width: 23.5rem;
   	height: 4.4rem;
 }
+.header .header-mid h2{
+  	width: 100%;
+  	font-size: 1.8rem;
+  	line-height: 4.4rem;
+  	color: #fff;
+  	text-align: center;
+}
 .header .header-mid ul{
 	width: 100%;
   	height: 100%;
