@@ -3,7 +3,6 @@
 		<router-link to="/home" tag="li">首页</router-link>
 		<router-link to="/home" tag="li">首页</router-link>
 		<router-link to="/home" tag="li">首页</router-link>
-		
 	</ul>
 </template>
 
