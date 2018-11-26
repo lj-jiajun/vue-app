@@ -343,27 +343,27 @@ export default new Vuex.Store({
 				user_id:"ui_1",
 				pro_id:"pl_1",
 				shop_num:1,
-				shop_money:499
+				shop_money:599
 		},{
 				shop_id:2,
 				user_id:"ui_1",
 				pro_id:"pl_9",
 				shop_num:1,
-				shop_money:499
+				shop_money:799
 		},{
 				shop_id:3,
 				user_id:"ui_1",
 				pro_id:"pl_12",
 				shop_num:1,
-				shop_money:499
-		}],
+				shop_money:999
+		}], 
 		userinfo:{
-			userid:"ui_1",
+			user_id:"ui_1",
 			name:"admin",
 			islogin:false
 		},
 		users:[{
-			userid:"ui_1",
+			user_id:"ui_1",
 			name:"admin",
 			pass:"123456"
 		}]
@@ -374,6 +374,9 @@ export default new Vuex.Store({
 		},
 		changeRecentSearches(state,obj){
 			state.recentSearches = obj;
+		},
+		changeShopCarts(state,arr){
+			state.shopCarts = arr;
 		}
 	},
 	data(){
