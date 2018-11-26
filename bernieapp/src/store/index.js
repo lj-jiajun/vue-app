@@ -356,7 +356,26 @@ export default new Vuex.Store({
 				pro_id:"pl_12",
 				shop_num:1,
 				shop_money:999
-		}], 
+		}],
+		orders:[{
+				shop_id:1,
+				user_id:"ui_1",
+				pro_id:"pl_1",
+				shop_num:1,
+				shop_money:599
+		},{
+				shop_id:2,
+				user_id:"ui_1",
+				pro_id:"pl_9",
+				shop_num:1,
+				shop_money:799
+		},{
+				shop_id:3,
+				user_id:"ui_1",
+				pro_id:"pl_12",
+				shop_num:1,
+				shop_money:999
+		}],  
 		userinfo:{
 			user_id:"ui_1",
 			name:"admin",
@@ -377,6 +396,9 @@ export default new Vuex.Store({
 		},
 		changeShopCarts(state,arr){
 			state.shopCarts = arr;
+		},
+		changeOrders(state,arr){
+			state.orders = arr;
 		}
 	},
 	data(){

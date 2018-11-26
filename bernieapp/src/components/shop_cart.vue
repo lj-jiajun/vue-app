@@ -27,7 +27,7 @@
 								<input type="text" :value="item.shop_num" @input="numChange(index,$event)"/>
 								<em @click="add(item.shop_id)">+</em>
 							</div>
-							<span @click="del(item.shop_id)">删除</span>
+							<span @click="del(index)">删除</span>
 						</div>
 					</div>
 					<div class="scl-gift">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-	import {mapState} from 'vuex';
+	import {mapState,mapMutations} from 'vuex';
 	import PubHeader from '@/components/public/header.vue';
 	
 	export default {
@@ -153,11 +153,31 @@
 						item.onoff = true;
 					}
 				});
-				var arr = [];
-				this.store.changeShopCarts(this.store.state,);
+				var arr = this.carts.map((item,index)=>{
+					return {
+						shop_id:item.shop_id,
+						user_id:item.user_id,
+						pro_id:item.pro_id,
+						shop_num:item.shop_num,
+						shop_money:item.shop_money
+					}
+				});
+				this.changeShopCarts(arr);
 			},
-			del(id){
-				  
+			del(ind){
+				this.carts = this.carts.filter((item,index)=>{
+					return ind!=index;
+				});
+				var arr = this.carts.map((item,index)=>{
+					return {
+						shop_id:item.shop_id,
+						user_id:item.user_id,
+						pro_id:item.pro_id,
+						shop_num:item.shop_num,
+						shop_money:item.shop_money
+					}
+				});
+				this.changeShopCarts(arr);
 			},
 			allCheck(){
 				this.allchecked = !this.allchecked;
@@ -181,8 +201,35 @@
 				});
 			},
 			settlement(){
-				
-			}
+				var arr1 = this.carts.filter((item,index)=>{
+						return !item.checked;
+				}).map((item,index)=>{
+					return {
+						shop_id:item.shop_id,
+						user_id:item.user_id,
+						pro_id:item.pro_id,
+						shop_num:item.shop_num,
+						shop_money:item.shop_money
+					}
+				});
+				var arr2 = this.carts.filter((item,index)=>{
+						return item.checked;
+				}).map((item,index)=>{
+					return {
+						shop_id:item.shop_id,
+						user_id:item.user_id,
+						pro_id:item.pro_id,
+						shop_num:item.shop_num,
+						shop_money:item.shop_money
+					}
+				});
+				this.changeShopCarts(arr1);
+				this.changeOrders(arr2);
+			},
+			...mapMutations({
+				changeShopCarts:'changeShopCarts',
+				changeOrders:'changeOrders'
+			})
 		},
 		computed:{
 		  	...mapState(['products','shopCarts','userinfo'])
