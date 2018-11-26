@@ -38,10 +38,7 @@
 	  created(){
 	  	if(this.$route.path == '/'){
 	  		this.show = true;
-	  	}else if(this.$route.path == '/classify'){
-	  		this.show = false;
-	  		this.shownav = false;
-	  	}else if(this.$route.path.indexOf('/pro')!=-1){
+	  	}else if(this.$route.path == '/classify'||this.$route.path == '/login'||this.$route.path.indexOf('/pro')!=-1){
 	  		this.show = false;
 	  		this.shownav = false;
 	  	}else{
@@ -54,10 +51,7 @@
 	  		handler:function(){
 	  			if(this.$route.path == '/'){
 			  		this.show = true;
-			  	}else if(this.$route.path == '/classify'){
-			  		this.show = false;
-			  		this.shownav = false;
-			  	}else if(this.$route.path.indexOf('/pro')!=-1){
+			  	}else if(this.$route.path == '/classify'||this.$route.path == '/login'||this.$route.path.indexOf('/pro')!=-1){
 			  		this.show = false;
 			  		this.shownav = false;
 			  	}else{

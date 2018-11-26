@@ -33,7 +33,7 @@
 	import {mapState} from 'vuex';
 	import PubHeader from '@/components/public/header.vue'
 	export default {
-		name:"Classify",
+		name:"ProList",
 	  	components:{
 	  		"pub-header":PubHeader
 	  	},

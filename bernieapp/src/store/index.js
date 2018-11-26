@@ -12,6 +12,8 @@ import src6 from '@/assets/img/watch-icon6.png'
 import src7 from '@/assets/img/watch-icon7.png'
 import src8 from '@/assets/img/watch-icon8.png'
 
+import bg from '@/assets/img/bg.png'
+
 import img1 from '@/assets/img/watch-pc1.png'
 import img2 from '@/assets/img/watch-pc2.png'
 import img3 from '@/assets/img/watch-pc3.png'

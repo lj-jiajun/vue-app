@@ -1,5 +1,13 @@
 <template>
-	<div>{{info[0].content}}</div>
+	<div>
+		{{info[0].content}}
+		<router-link to="/login" tag="a" key="1">
+	  		登录
+	  	</router-link>
+	  	<router-link to="/register" tag="a" key="2">
+	  		注册
+	  	</router-link>
+	</div>
 </template>
 
 <script>
