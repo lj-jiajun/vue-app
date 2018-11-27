@@ -1,46 +1,40 @@
 <template>
-	<div class="proList">
+	<div class="register" :style="bg">
 		<pub-header>
 			<i slot="left" class="icon iconfont icon-fanhui" @click="goback"></i>
-			<div slot="mid" class="search">
-				<i class="icon iconfont icon-oc-search" @click="search"></i>
-				<input type="text" placeholder="商务男表 全场8折起"/>
-			</div>
-			<em slot="right" class="searchTxt">搜索</em>
+			<h2 slot="mid">注册页</h2>
 		</pub-header>
-		<div class="pl-content">
-			<!--<ul class="pl-list">
-				<router-link v-for="(item,index) in products" :to="'/prodetails/'+item.pro_id" :key="index" tag="li">
-					<div class="pl-img">
-						<img :src="item.imgSrc" alt="" />
-					</div>
-					<div class="pl-content">
-						<h3>{{item.title}}</h3>
-						<p><em>{{item.discount}}</em></p>
-						<div>
-							<span>￥{{item.price}}</span>
-							<b>月销{{item.sales}}笔</b>
-							<i class="icon iconfont icon-gouwuchekong"></i>
-						</div>
-					</div>
-				</router-link>
-			</ul>-->
+		<div class="register-content">
+			<div class="register-info">
+				<p><label>手机号码：</label><input type="text" id="userphone"/></p>
+				<p><label>验证码：</label><input type="text" id="usercode"/><span>发送验证码</span></p>
+				<p><label>用户名：</label><input type="text" id="username"/></p>
+				<p><label>密码：</label><input type="password" id="password"/></p>
+			</div>
+			<div class="register-check">
+				<i></i><span>已同意<em>《伯尼用户协议和隐私条款》</em></span>
+			</div>
+			<div class="register-btn">
+				<input type="button" value="立即注册"/>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+	import bg from '@/assets/img/bg.png'
 	import {mapState} from 'vuex';
 	import PubHeader from '@/components/public/header.vue'
 	export default {
-		name:"ProList",
+		name:"Register",
 	  	components:{
 	  		"pub-header":PubHeader
 	  	},
 		data(){
 			return {
 				list:[],
-				show:false
+				show:false,
+				bg:'background:url('+bg+');background-size: 100% 100%;'
 			}
 		},
 		created(){
@@ -49,33 +43,14 @@
 		methods:{
 			goback(ev){
 				this.$router.go(-1);
-			},
-			search(){
-				this.$router.push("/prosearch");
-			},
-			showScreenings(){
-				this.show = true;
-			},
-			check(item){
-				item.checked = !item.checked;
-			},
-			reset(){
-				this.list.map((item,index)=>{
-					item.content.map((item1,index1)=>{
-						item1.checked = false;
-					});
-				});
-			},
-			finish(){
-				this.show = false;
 			}
 		},
 		computed:{
-		  	...mapState(['classifies','products','screenings'])
+		  	...mapState(['classifies'])
 		}
 	}
 </script>
 
 <style lang="less" scoped>
-	@import '../assets/css/pro_categories.less';
+	@import '../assets/css/register.less';
 </style>

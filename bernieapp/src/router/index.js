@@ -5,6 +5,7 @@ import Classify from '@/components/pro_categories'
 import ShopCart from '@/components/shop_cart'
 import User from '@/components/user'
 import Login from '@/components/login'
+import Register from '@/components/register'
 import ProList from '@/components/pro_list'
 import ProDetails from '@/components/pro_details'
 import ProSearch from '@/components/pro_search'
@@ -29,6 +30,10 @@ export default new Router({
       path: '/login',
       name: 'Login',
       component: Login
+    },,{
+      path: '/register',
+      name: 'Register',
+      component: Register
     },{
       path: '/user',
       name: 'User',
